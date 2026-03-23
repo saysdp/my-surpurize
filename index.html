@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tap the Heart ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+margin:0;
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+
+font-family:'Playfair Display',serif;
+
+}
+
+h1{
+
+color:#ff2d75;
+margin-bottom:40px;
+font-size:40px;
+
+}
+
+.heart{
+
+font-size:120px;
+cursor:pointer;
+animation:beat 1.5s infinite;
+
+}
+
+@keyframes beat{
+
+0%{transform:scale(1)}
+50%{transform:scale(1.2)}
+100%{transform:scale(1)}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Tap the Heart ❤️</h1>
+
+<div class="heart" onclick="openPage()">💖</div>
+
+<script>
+
+function openPage(){
+
+window.location.href="question.html"
+
+}
+
+</script>
+
+</body>
+</html>
